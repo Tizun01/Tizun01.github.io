@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm Web tiki</title>
+    <style>
+        html{
+            background-color: lightgray;
+        }
+        .button1{
+            background-color: inherit;
+            float:left;
+            border:none;
+            cursor:pointer;
+            padding: 14px 50px 30px;
+            transition: 0.5s;
+            font-size:17px;
+        }
+        .button1:hover {
+        background-color: rgb(35, 82, 153);
+        color:rgb(247, 187, 22)
+        }
+        .info{
+            width:50%;
+            height: 650px;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: 10px;
+            background-color: rgb(255, 255, 255);
+            float:left;
+        }
+        form{
+            width: 90%;
+            margin-left: auto;
+            margin-right: 10px;
+            box-sizing: border-box;
+
+        }
+        .input1{
+            width: 80%;
+            padding:8px 3px;
+            margin:10px 8px;
+            display: inline-block;
+            border:1px solid;
+            box-sizing: border-box;
+            float:right;
+        }
+
+        .input2{
+            width: 38.5%;
+            padding:8px 3px;
+            margin:10px 8px;
+            display: inline-block;
+            border:1px solid;
+            box-sizing: border-box;
+            float:right;
+        }
+        
+        .input3{
+            width: 30%;
+            padding:8px 3px;
+            margin:10px 8px;
+            box-sizing: border-box;
+        }
+        .input4{
+            width: 24.8%;
+            padding:8px 3px;
+            margin:10px 8px;
+            box-sizing: border-box;
+            float:right;
+        }
+        .input5{
+            width: 25%;
+            margin-top: 20px;
+        }
+        .box{
+            width: 20%;
+
+            margin: 28px 0px 0px 20px;
+
+            float: left;
+
+            text-align: left;
+
+        }
+        label{
+
+            padding:8px 3px;
+            margin:100px 8px;
+            color:lightslategray;
+        }
+        .image{
+            width:30%;
+            height: 650px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 10px;
+            background-color: rgb(255, 255, 255);
+            float:left;
+        }
+        .author{
+            width:13%;
+            height: 700px;
+            margin:0px 10px 0 10px;
+            margin-right: 10px;
+            float:right;
+            background-color: rgba(121, 121, 121, 0.452);
+        }
+    </style>
+</head>
+<body>
+<div class="image">
+    <p style="margin:40px 30px 30px 50px ;font-size: 30px;" >Tạo tài khoản</p>
+    <p style="margin:40px 100px 30px 50px ;font-size: 15px;color: lightslategray;">Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn</p>
+    <img src="Image/tiki.png">
+</div>
+<div class="info">
+        <button class="button1">Đăng nhập</button>
+        <button class="button1">Tạo tài khoản</button>
+
+    <br><br><br>
+    <hr color="lightblue">
+        <div class="box">
+            <label for="name">Họ tên</label><br><br><br>
+            <label for="tel">SĐT</label><br><br><br>
+            <label for="code">Mã xác thực</label><br><br><br>
+            <label for="email">Email</label><br><br><br>
+            <label for="psw">Mật khẩu</label><br><br>
+            <label for="sex">Giới tính</label><br><br>
+            <label for="sex">Ngày sinh</label>
+
+            
+        </div>
+    <form action="https://tiki.vn/">
+        <br>
+        <input class="input1" type="text" placeholder="Nhập họ tên" name="name"/>
+
+        <input  class="input1" type="tel" placeholder="Nhập số điện thoại" name="tel" required/>
+
+        <button class="input2" style="background-color:orange; cursor:pointer;">Gửi mã xác thực</button>
+        <input class="input2" type="text" placeholder="Nhập mã xác thực gửi tới số điện thoại trên" name ="Code" required/>
+
+        <input class="input1" type="email" placeholder="Nhập email" name="email"/>
+
+        <input class="input1" type="password" placeholder="Nhập mật khẩu từ 6 đến 32 ký tự" name="psw" maxlength="32" minlength="6" required/>
+
+        <input class="input3" type="radio" name="sex"/>Nam
+        <input class="input3" type="radio" name="sex"/>Nữ
+
+        <input class="input4" type="number" placeholder="năm" name="birthday" min="1900" max="2022">
+        <input class="input4" type="number" placeholder="tháng" name="birthday" min="1" max="12"/>
+        <input class="input4" type="number" placeholder="ngày" name="birthday" min="1" max="31"/>
+
+        <input class="input5" type="checkbox"/>Nhận các thông tin và chương trình khuyến mãi của Tiki qua email <br>
+
+        <input class="input1" type="submit" style="padding: 10px;background-color: orange;font-size: 20px;border:none" value="Tạo tài khoản"/>
+
+        <p class="input1" style="border:none">Khi bạn nhấn đăng kí, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo <a href="https://hotro.tiki.vn/s/article/dieu-khoan-su-dung"> điều kiện sử dụng và chính sách của Tiki</a></p>
+    
+    </form>
+
+</div>
+<div class="author">
+    <p style="font-family: impact;font-size: 40px;text-align: center;">Created by</p>
+    
+    <img src="image/Userphframe .png" width="150px" style="margin:10px 25px">
+
+    <p style="font-family: impact;font-size:60px;color: aquamarine;text-align: center;">T i z u n</p>
+</div>
+</body>
+</html>

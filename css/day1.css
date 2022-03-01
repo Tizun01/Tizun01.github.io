@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(56, 151, 186),rgb(21, 75, 95));
+    font-family: impact;
+}
+
+.card{
+    margin: 120px auto;
+    width: 320px;
+    height: 400px;
+    background: #1f8865;
+    padding: 20px;
+    border-radius: 15px;
+    color:white;
+    position: relative;
+}
+
+.heart, .cart{
+    font-size: 35px;
+    position: absolute;
+    left:20px;
+    top: 15px;
+}
+
+.cart{
+    top:70px;
+}
+.apple{
+    width: 90%;
+    margin-right: -20px;
+    margin-left: auto;
+}
+.apple img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title, .price{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.size{
+    display: flex;
+    align-items: center;
+}
+
+.size span{
+    padding: 1px 6px;
+    background: #dadada;
+    color: black;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.action button{
+    background: black;
+    border:none;
+    outline:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.card:hover .apple{
+    transform: translateY(-70px) translateX(100px) rotate(20deg);
+    transition: 1.5s;
+}
+
+.card:hover .title{
+    transform: translate(-110px,-150px);
+    transition: 0.5s;
+}
+
+.card:hover .price{
+    transform: translate(-120px,-150px);
+    transition: 0.5s;
+}
+.size{
+    margin-top: -50px;
+}
+
+.size, .action{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .size,
+.card:hover .action{
+    visibility: visible;
+    opacity: 100%;
+}
+
+.heart:hover{
+    color:red;
+}
+
+.cart:hover{
+    color:red;
+}

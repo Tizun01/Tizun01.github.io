@@ -90,7 +90,7 @@ body{
 
 .card:hover .title{
     transform: translate(-110px,-150px);
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 80px;
 }
 

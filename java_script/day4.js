@@ -1,8 +1,8 @@
 const images = document.querySelectorAll(".wrapper .image img");
 const gallery = document.querySelector(".gallery");
 const galleryImg = document.querySelector(".gallery__inner img");
+const close = document.querySelector(".gallery .close");
 
-const close = document.querySelector(".gallery.close");
 const next = document.querySelector(".control.next");
 const prev = document.querySelector(".control.prev");
 

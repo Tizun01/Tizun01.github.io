@@ -102,6 +102,11 @@ html{
 #footer{
     height: 4.5vh;
     background: white;
+    bottom: 0;
+    position: fixed;
+    padding: 0px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
 }
 
 #footer p{

@@ -1,5 +1,3 @@
-/* Reset CSS */
-
 *{
     padding: 0;
     margin: 0;
@@ -55,17 +53,11 @@ html{
     display: none;
 }
 
-#content h2{
-    font-size: 50px;
-}
 
 #footer{
     height: 4.5vh;
-    background: white;
-    bottom: 0;
-    position: fixed;
+    background: rgb(207, 172, 106);
     padding: 0px 10px 0px 10px;
-    bottom: 0;
     width: 100%;
 }
 
@@ -74,7 +66,7 @@ html{
     float: right;
     margin-right: 20px;
     font-size: 20px;
-    color: rgb(58, 169, 189);
+    color: rgb(255, 255, 255);
 }
 
 #footer span{
@@ -83,5 +75,5 @@ html{
     margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(255, 6, 6);
+    color: rgb(255, 255, 255);
 }

@@ -8,8 +8,8 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(78, 78, 78);
-}
+    background: whitesmoke;
+}   
 
 #main {
 
@@ -44,6 +44,11 @@ html{
     float: left;
     font-size: 20px;
     transition: 0.25s;
+}
+
+#menu{
+    color:black;
+    background-color: #ccc;
 }
 
 #nav li:hover a{
@@ -91,6 +96,7 @@ html{
 
 #content .food:hover img{
     transform:scale(1.05);
+    box-shadow: 0 0 8px rgb(0 0 0 / 75%);
 }
 
 #content .food span{
@@ -109,7 +115,7 @@ html{
 .line{
     width: 80%;
     height: 10px;
-    background: white;
+    background: rgb(73, 67, 67);
     margin: auto;
 }
 

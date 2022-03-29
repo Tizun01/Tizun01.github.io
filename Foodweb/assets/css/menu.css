@@ -8,7 +8,12 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background: whitesmoke;
+    background-color: #FFE53B;
+background-image: linear-gradient(-147deg, #FFE53B 0%, #FF2525 74%);
+
+
+
+
 }   
 
 #main {
@@ -32,6 +37,16 @@ html{
 
 #nav li {
     display: inline-block;
+}
+
+#nav button{
+    outline: none;
+    float: right;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.753);
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 #nav li a {
@@ -76,7 +91,8 @@ html{
     text-align: center;
     line-height: 150px;
     font-weight: 800;
-    color:orange;
+    color:#141A46;
+    text-shadow: 2px 2px rgba(0,0,0,0.1);
 }
 
 #content .food{
@@ -85,7 +101,8 @@ html{
     height: 300px;
     margin: 30px 30px;
     position: relative;
-    transition: 0.5s;
+    transition: 0.8s;
+    transition-delay:0.1s ;
 }
 
 #content .food img{
@@ -97,6 +114,18 @@ html{
 #content .food:hover img{
     transform:scale(1.05);
     box-shadow: 0 0 8px rgb(0 0 0 / 75%);
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+#content .food:hover {
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+
+    border-radius: 30px;
+    transform: rotateY(180deg);
 }
 
 #content .food span{
@@ -108,8 +137,21 @@ html{
     color: white;
 }
 
+#content .food .price{
+    top:115px;
+    left: 120px;
+    color: white;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
 #content .food:hover span{
-    color:rgb(221, 56, 125);
+    opacity: 0;
+}
+
+#content .food:hover .price{
+    opacity: 1;
 }
 
 .line{

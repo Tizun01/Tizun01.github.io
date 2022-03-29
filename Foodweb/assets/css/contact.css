@@ -28,6 +28,16 @@ html{
 
 }
 
+#nav button{
+    outline: none;
+    float: right;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.753);
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
 #nav li {
     display: inline-block;
 }

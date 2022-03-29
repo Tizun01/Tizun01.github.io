@@ -48,6 +48,16 @@ html{
     transition: 0.25s;
 }
 
+#nav button{
+    outline: none;
+    float: right;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.753);
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
 #home{
     color:black;
     background-color: #ccc;
@@ -73,11 +83,23 @@ html{
     box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #story{
     text-align: center;
     font-size: 30px;
 }
 
+h2 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(255, 115, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 .left{
     float: left;
     margin-top:50px;
@@ -101,7 +123,6 @@ html{
     border-radius: 20px;
     position:relative;
     color: white;
-    box-shadow: 0 0 8px rgb(0 0 0 / 25%);
 }
 
 .right .box .number{

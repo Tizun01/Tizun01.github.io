@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#container{
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 10px 0 gray;
+}
+
+#header .logo{
+    width: 100px;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+}
+
+#header #nav{
+    float: right;
+}
+
+#header #nav li{
+    display: inline;
+}
+
+#nav .home{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: white;
+}
+
+#nav li a{
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 5px 50px;
+    display: inline-block;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+#nav li:hover a{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: white;
+}
+
+#wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+#wrapper .banner{
+    width: 1350px;
+    height: 650px;
+    background: url(./banner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper .introduction{
+    width: 90%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper .introduction .note{
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    float: left;
+    margin: 0 40px;
+    position: relative;
+    bottom: -550px;
+    font-size: 25px;
+    color: white;
+}
+
+.note h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 33px;
+}
+
+.note p{
+    margin-top: 30px;
+    margin-left: 3px;
+    width: 75%;
+    float: left;
+    font-size: 20px;
+    position: absolute;
+    top: 140px;
+}
+
+.note i{
+    float: left;
+    margin-top:80%;
+    font-size: 40px;
+    position: absolute;
+    right: 13px;
+    bottom: 20px;
+}
+
+.introduction .note.one{
+    background-image: linear-gradient(to top,rgb(255,134,19), rgb(255,173,0));
+}
+
+.introduction .note.two{
+    background-image: linear-gradient(to top, rgb(28,90,211), rgb(182,92,522));
+
+}
+.introduction .note.three{
+    background-image: linear-gradient(to top, rgb(255,24,152), rgb(251,47,82));
+}
+.introduction .note.four{
+    background-image: linear-gradient(to top, rgb(185,21,223), rgb(240,19,220));
+}
+
+#welcome{
+    margin-top: 300px;
+}
+
+#welcome #content{
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#welcome .boxone{
+    width: 620px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    position:relative;
+    float: left;
+    background: rgba(170, 170, 170, 0.3);
+}
+
+#welcome .boxone h2{
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#welcome .boxone p{
+    width: 80%;
+    color: rgb(114, 114, 114);
+    margin-left: 30px;
+}
+
+#welcome .boxone button{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right,rgb(251,137,4),rgb(252,49,78));
+}
+
+
+#welcome .boxtwo{
+    width: 620px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    position:relative;
+    color: rgba(247, 247, 247, 0.048);
+    float: left;
+    background: url(./hinh2.jpg);
+    background-size: cover;
+}
+
+#welcome .boxthree{
+    width: 620px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    position:relative;
+    color: white;
+    float: left;
+    background: url(./hinh1.jpg);
+}
+
+#why{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#why .banner{
+    width: 1350px;
+    height: 400px;
+    background: url(./banner2.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#why .banner .box{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgba(255, 51, 78, 0.649),rgba(244, 3, 132, 0.485));
+    position: absolute;
+    left: 50px;
+}
+
+#why .banner .box h2{
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#why .banner .box p{
+    width: 80%;
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#why .banner .box button{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#event{
+    margin-top: 50px;
+}
+
+#event #content{
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#event .boxone{
+    width: 620px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    position:relative;
+    float: left;
+    color: white;
+    background-image: linear-gradient(to top,rgb(255,134,19), rgb(255,173,0));
+}
+
+#event .boxone h2{
+    font-size: 30px;
+    line-height: 100px;
+    margin-left: 50px;
+    font-size: 35px;
+    text-shadow: 2px 2px gray;
+}
+
+#event .boxone li{
+    list-style-position: inside;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#event .boxtwo{
+    width: 620px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    position:relative;
+    color: rgba(247, 247, 247, 0.048);
+    float: left;
+    background: url(./event.jpg);
+    background-size: cover;
+}
+
+#card{
+    margin-top:100px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card .profile{
+    width: 250px;
+    height: 330px;
+    background: rgba(128, 128, 128, 0.304);
+    margin: 0 20px;
+    position: relative;
+}
+
+#card .profile .image{
+    width: 150px;
+    height: 150px;
+    margin: 0 50px;
+    margin-top: -70px;
+}
+
+#card .profile .image img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#card .profile p{
+    margin-top: 30px;
+    color: rgb(152, 147, 147);
+    font-size: 18px;
+}
+
+#card .profile h3{
+    color: orange;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+}
+
+#map{
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+    position: relative;
+}
+
+#map #content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map .boxone{
+    width: 540px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    background: linear-gradient(to top,rgb(2,124,209),rgb(3,155,213));
+}
+
+#map .boxone h2{
+    font-size: 40px;
+    line-height: 100px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+#map .boxone p{
+    width: 80%;
+    margin-left: 60px;
+}
+
+#map .boxone #head{
+    margin-left: 60px;
+}
+
+#map .boxone i{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#map .boxtwo{
+    width: 540px;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    color: rgba(247, 247, 247, 0.048);
+    float: left;
+    background: url(./map.jpg);
+    background-size: cover;
+}
+
+#footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.304);
+}

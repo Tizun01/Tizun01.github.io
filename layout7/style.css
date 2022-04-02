@@ -98,14 +98,14 @@ body{
 }
 
 .note h2{
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
-    font-size: 33px;
+    font-size: 34px;
 }
 
 .note p{
     margin-top: 30px;
-    margin-left: 3px;
+    margin-left: 10px;
     width: 75%;
     float: left;
     font-size: 20px;

@@ -39,31 +39,35 @@ section{
 .one{
     background: url(./1.png);
     background-size:cover ;
-    filter: brightness(0%);
+    filter: brightness(10%);
 }
 
 .box:hover{
-    filter: brightness(100%);
+    filter: brightness(300%);
 }
 
 .two{
     background: url(./2.png);
     background-size:cover ;
+    filter: brightness(10%);
 }
 
 .three{
     background: url(./3.png);
     background-size:cover ;
+    filter: brightness(10%);
 }
 
 .four{
     background: url(./4.png);
     background-size:cover ;
+    filter: brightness(10%);
 }
 
 .five{
     background: url(./5.png);
     background-size:cover ;
+    filter: brightness(10%);
 }
 
 #background{

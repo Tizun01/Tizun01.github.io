@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +9,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: sans-serif;
-    background-color: powderblue;
+    background-color: #009B77;
 }
 
-/* Book */
 .book {
     position: relative;
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     transition: transform 0.5s;
 }
 
@@ -30,11 +27,9 @@ body {
     top: 0;
     left: 0;
     perspective: 1500px;
-
 }
 
-.front,
-.back {
+.front,.back {
     background-color: white;
     position: absolute;
     width: 100%;
@@ -48,15 +43,14 @@ body {
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    border-left: 5px solid #744F25;
 }
 
 .back {
     z-index: 0;
 }
 
-.front-content,
-.back-content {
+.front-content,.back-content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -68,43 +62,202 @@ body {
     transform: rotateY(180deg)
 }
 
-/* Paper flip effect */
-.flipped .front,
-.flipped .back {
+.flipped .front,.flipped .back {
     transform: rotateY(-180deg);
 }
 
-/* Controller Buttons */
-button {
-    border: none;
-    background-color: transparent;
+h1{
+    margin-top:500px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 2px gray;
+    
+}
+
+#f1{
+    background: url(./image/bia.jpg);
+    background-size: cover;
+}
+
+#b1{
+    background: url(./image/day1.png);
+    background-size: cover;
+}
+
+#f2{
+    background: url(./image/day2.png);
+    background-size: cover;
+    background-position: -50px;
+}
+
+#b2{
+    background: url(./image/day3.png);
+    background-size: cover;
+}
+
+#f3{
+    background: url(./image/day4.png);
+    background-size: cover;
+    background-position: -50px;
+}
+
+#b3{
+    background: url(./image/day5.png);
+    background-size: cover;
+}
+
+#f4{
+    background: url(./image/day6.png);
+    background-size: cover;
+    background-position: -20px;
+}
+
+#b4{
+    background: url(./image/day7.png);
+    background-size: cover;
+    background-position: -40px;
+}
+
+#f5{
+    background: url(./image/day8.png);
+    background-size: cover;
+    background-position: -100px;
+}
+
+#b5{
+    background: url(./image/day9.png);
+    background-size: cover;
+}
+
+#f6{
+    background: url(./image/day10.png);
+    background-size: cover;
+}
+
+#b6{
+    background: url(./image/day11.png);
+    background-size: cover;
+    background-position: -30px;
+}
+
+#f7{
+    background: url(./image/day12.png);
+    background-size: cover;
+    background-position: -50px;
+}
+
+#b7{
+    background: url(./image/day13.png);
+    background-size: cover;
+    background-position: -20px;
+}
+
+#f8{
+    background: url(./image/day14.png);
+    background-size: cover;
+    background-position: -400px;
+}
+
+#b8{
+    background: url(./image/day15.png);
+    background-size: cover;
+    background-position: -30px;
+}
+
+#f9{
+    background: url(./image/day16.png);
+    background-size: cover;
+    background-position: -400px;
+}
+
+#b9{
+    background: url(./image/day17.png);
+    background-size: cover;
+    background-position: -80px;
+}
+
+#f10{
+    background: url(./image/day18.png);
+    background-size: cover;
+    background-position: -50px;
+}
+
+#b10{
+    background: url(./image/day19.png);
+    background-size: cover;
+    background-position: -70px;
+}
+
+#f11{
+    background: url(./image/finalday.png);
+    background-size: cover;
+    border: 10px solid white;
+}
+
+#b11{
+    background: url(./image/bia2.jpg);
+    background-size: cover;
+    background-position: -10px;
+}
+
+
+#prev, #next {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+#prev:hover, #next:hover {
     cursor: pointer;
-    margin: 10px;
-    transition: transform 0.5s;
+}
+#prev {
+    top: 0;
+    left: 0;
+}
+#next {
+    top: 0;
+    left: 0;
 }
 
-button:focus {
-    outline: none;
+#p11 {
+    z-index: 1;
 }
 
-button:hover i {
-    color: #636363;
-}
-
-i {
-    font-size: 50px;
-    color: gray;
-}
-
-/* Paper stack order */
-#p1 {
-    z-index: 3;
-}
-
-#p2 {
+#p10 {
     z-index: 2;
 }
 
+#p9 {
+    z-index: 3;
+}
+
+#p8 {
+    z-index: 4;
+}
+
+#p7 {
+    z-index: 5;
+}
+
+#p6 {
+    z-index: 6;
+}
+
+#p5 {
+    z-index: 7;
+}
+
+#p4 {
+    z-index: 8;
+}
+
 #p3 {
-    z-index: 1;
+    z-index: 9;
+}
+
+#p2 {
+    z-index: 10;
+}
+
+#p1 {
+    z-index: 11;
 }

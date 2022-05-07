@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(./font/Gotham-Font/AvenirLTStd-Heavy.otf);
+    font-weight: 600;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(./font/Gotham-Font/Gotham-Bold.otf);
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(./font/Gotham-Font/Gotham-Black.otf);
+    font-weight: 800;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(./font/Gotham-Font/AvenirLTStd-Medium.otf);
+    font-weight: 400;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(./font/Gotham-Font/GothamLight.ttf);
+    font-weight: 300;
+    font-style: normal; 
+}
+
+html{
+    font-family: Gotham;
+}
+
+above{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: gotham;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+
+a:visited{
+    color: white;
+}
+
+/* left side */
+/* ------------------------------------------------------------------------------------------------------------- */
+#leftBar{
+    width: 200px;
+    height: 87vh;
+    background: black;
+    color: white;
+    float: left;
+}
+
+#logo img{
+    width: 90%;
+    object-fit: fill;
+    margin: 10px;
+}
+
+#nav{
+    width: 80%;
+    margin: 0 10%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#nav li{
+    list-style-type:none;
+    margin: 20px;
+    filter: brightness(50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#nav li:hover{
+    filter: brightness(100%);
+}
+
+#nav li i{
+    margin-right: 10px ;
+    font-size: 25px;
+}
+
+#nav .like{
+    margin-top: 50px;
+    border-bottom: solid white 1px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* center */
+#container{
+    width: calc(100%-200px);
+    height: 87vh;
+    background:#121212;
+    overflow-y: scroll;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: lightgray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+#container .top-bar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(0deg, #121212 0%, #29cb95 304%);
+}
+
+#container .top-bar .profile{
+    width: 130px;
+    height: 40px;
+    margin: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.777);
+}
+
+#container .top-bar .profile img{
+    width: 20%;
+    object-fit: fill;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#container .top-bar .profile p{
+    margin-right: 20px;
+}
+
+#container .menu{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#container .menu li{
+    display: inline-block;
+}
+
+#container .album-song{
+    width: 400px;
+    height: 80px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #4d4d4d;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+#container .menu p{
+    margin-left: 20px;
+}
+
+#container .album-song .anh{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+#container .album-song .nut{
+    height: 50px;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    right: 10px;
+}
+
+#container .album-song:hover .nut{
+    opacity: 1;
+}
+
+.music-album{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title{
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.music-album .song-profile{
+    width: 180px;
+    height: 250px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.music-album .song-profile:hover{
+    filter: brightness(150%);
+}
+
+.music-album .song-profile:hover img{
+    filter: brightness(70%);
+}
+
+.music-album .song-profile img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.music-album .song-profile .name{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.music-album .song-profile .date{
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #535353;
+}
+
+.music-album ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+.box{
+    width: 100%;
+    height: 60px;
+}
+
+#music{
+    width: 100%;
+    height: 13vh;
+    background: #252525;
+    bottom: 0;
+}
+
+.left{
+    width: 20%;
+    height: 13vh;
+    display: flex;
+    position: relative;
+    left: 15px;
+    align-items: center;
+    float:left;
+    color: white;
+}
+
+.left img{
+    height: 10vh;
+    margin-right: 20px;
+}
+
+.center{
+    width: 60%;
+    font-size: 20px;
+    color: white;
+    flex-direction: column;
+    float: left;
+}
+
+.center .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    filter: brightness(70%);
+}
+
+.controls i{
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.times{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    color: #a7a7a7
+}
+
+.times .duration{
+    margin-right: 10px;
+}
+
+.times .remaining{
+    margin-left: 10px;
+}
+
+.range{
+    margin-top: 6px;
+    -webkit-appearance: none;
+    width: 500px;
+    height: 3px;
+    outline: none;
+    background-color: #6a6969;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00fd0a;
+    cursor: pointer;
+    border: 4px solid #333;
+}
+
+.right{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    float:right;
+}

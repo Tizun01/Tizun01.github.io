@@ -11,14 +11,15 @@ var totalTime = document.querySelector(".duration");
 let isPlaying = true;
 let indexSong = 0;
 
-const music = ["đen đá không đường.mp3", "anh nhà ở đâu thế.mp3", "em bé.mp3"];
-
-displayTimer();
-
-song.addEventListener("ended", nextSong)
+var musicImage = document.querySelector(".songImage");
+var musicName = document.querySelector(".songName");
+var artistName = document.querySelector(".artistName");
 
 let timer;
 
+let tempSong = 0;
+
+displayTimer();
 playBtn.addEventListener("click",playPause);
 
 function playPause() { 
@@ -37,33 +38,41 @@ function playPause() {
     }
 }
 
-song.setAttribute("src", `./assets/music/amee/${music[indexSong]}`);
-
 nextBtn.addEventListener("click",nextSong);
 
 prevBtn.addEventListener("click",prevSong);
 
 function nextSong() {
-
+    playPause();
     indexSong++;
-    if (indexSong >= music.length) {
-        indexSong = 0;
+    if (indexSong >= tempSong + 5) {
+        indexSong = tempSong;
     }
-    song.setAttribute("src", `./assets/music/amee/${music[indexSong]}`);
+    song.setAttribute("src", `./assets/music/${music[indexSong].file}`);
     song.play();
     playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+    musicImage.setAttribute("src", music[indexSong].image);
+    musicName.textContent = music[indexSong].title;
+    artistName.textContent = music[indexSong].artist;
+    heartDisable();
 }
 
 function prevSong() {
-
+    playPause();
     indexSong--;
-    if (indexSong < 0) {
-        indexSong = music.length-1;
+    if (indexSong < tempSong) {
+        indexSong = tempSong+4;
     }
-    song.setAttribute("src", `./assets/music/amee/${music[indexSong]}`);
+    song.setAttribute("src", `./assets/music/${music[indexSong].file}`);
     song.play();
     playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+    musicImage.setAttribute("src", music[indexSong].image);
+    musicName.textContent = music[indexSong].title;
+    artistName.textContent = music[indexSong].artist;
+    heartDisable();
 }
+
+song.addEventListener("ended", nextSong);
 
 function displayTimer(){
     const   {duration, currentTime} = song;
@@ -90,4 +99,34 @@ range.addEventListener("change", changeBar);
 
 function changeBar() {
     song.currentTime = range.value;
+}
+
+var amee = document.getElementById("amee");
+amee.addEventListener("click",ameeAlbum);
+
+function ameeAlbum(){
+    if (isPlaying)
+        playPause();
+    tempSong = 0;
+    indexSong=tempSong;
+    song.setAttribute("src", `./assets/music/${music[indexSong].file}`);
+    song.play();
+    musicImage.setAttribute("src", music[indexSong].image);
+    musicName.textContent = music[indexSong].title;
+    artistName.textContent = music[indexSong].artist;
+}
+
+var ngot = document.getElementById("ngot");
+ngot.addEventListener("click",ngotAlbum);
+
+function ngotAlbum(){
+    if (isPlaying)
+        playPause();
+    tempSong = 5;
+    indexSong=tempSong;
+    song.setAttribute("src", `./assets/music/${music[indexSong].file}`);
+    song.play();
+    musicImage.setAttribute("src", music[indexSong].image);
+    musicName.textContent = music[indexSong].title;
+    artistName.textContent = music[indexSong].artist;
 }

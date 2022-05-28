@@ -101,14 +101,10 @@ function changeBar() {
     song.currentTime = range.value;
 }
 
-var amee = document.getElementById("amee");
-amee.addEventListener("click",ameeAlbum);
-
-function ameeAlbum(){
-    if (isPlaying)
-        playPause();
-    tempSong = 0;
+function active(){
     indexSong=tempSong;
+    heart.style.opacity = "1";
+    musicImage.style.opacity = "1";
     song.setAttribute("src", `./assets/music/${music[indexSong].file}`);
     song.play();
     musicImage.setAttribute("src", music[indexSong].image);
@@ -116,17 +112,3 @@ function ameeAlbum(){
     artistName.textContent = music[indexSong].artist;
 }
 
-var ngot = document.getElementById("ngot");
-ngot.addEventListener("click",ngotAlbum);
-
-function ngotAlbum(){
-    if (isPlaying)
-        playPause();
-    tempSong = 5;
-    indexSong=tempSong;
-    song.setAttribute("src", `./assets/music/${music[indexSong].file}`);
-    song.play();
-    musicImage.setAttribute("src", music[indexSong].image);
-    musicName.textContent = music[indexSong].title;
-    artistName.textContent = music[indexSong].artist;
-}

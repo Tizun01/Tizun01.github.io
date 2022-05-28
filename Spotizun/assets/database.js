@@ -62,6 +62,38 @@ const music = [
     artist:'Ngọt',
     image: './assets/image/album/ngọt/dequen.jpg',
     file:'ngọt/để quên.mp3'
-    }
+    },
     //Ngọt
+    {
+    id:11,
+    title:'Friends',
+    artist:'Hyper Potions',
+    image: './assets/image/album/hyper/friend.jpg',
+    file:'hyper/friends.mp3'
+    },{
+    id:12,
+    title:'Time Trials',
+    artist:'Hyper Potions',
+    image: './assets/image/album/hyper/timetrial.jpg',
+    file:'hyper/time_trials.mp3'
+    },{
+    id:13,
+    title:'Surf',
+    artist:'Hyper Potions',
+    image: './assets/image/album/hyper/surf.jpg',
+    file:'hyper/surf.mp3'
+    },{
+    id:14,
+    title:'Maborashi',
+    artist:'Hyper Potions',
+    image: './assets/image/album/hyper/maborashi.jpg',
+    file:'hyper/Maborashi.mp3'
+    },{
+    id:15,
+    title:'Let The Games Begin',
+    artist:'Hyper Potions',
+    image: './assets/image/album/hyper/letthegamebegin.jpg',
+    file:'hyper/lethegamebegin.mp3'
+    }
+    //HyperPotion
 ]

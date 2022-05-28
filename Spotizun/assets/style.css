@@ -41,6 +41,7 @@
 
 html{
     font-family: Gotham;
+    scroll-behavior: smooth;
 }
 
 above{
@@ -90,7 +91,6 @@ a:visited{
     margin: 20px;
     filter: brightness(50%);
     transition: 0.5s;
-    cursor: pointer;
 }
 
 #nav li:hover{
@@ -169,7 +169,7 @@ a:visited{
     z-index: 23;
     font-weight: lighter;
     border-radius: 10px;
-    opacity: 0;
+    display:none;
 }
 
 #container .top-bar .sub-nav li{
@@ -199,6 +199,17 @@ a:visited{
     height: 80px;
     font-size: 18px;
     margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+#container .album-song .inner{
+    width: 26vw;
+    height: 80px;
+    font-size: 18px;
     background-color: #4d4d4d;
     cursor: pointer;
     border-radius: 10px;
@@ -209,6 +220,7 @@ a:visited{
 }
 
 #container .menu p{
+    width: 20vw;
     margin-left: 40px;
 }
 
@@ -231,6 +243,10 @@ a:visited{
 
 #container .album-song:hover .nut{
     opacity: 1;
+}
+
+#container .album-song.nut:hover .nut{
+    opacity: 0;
 }
 
 .music-album{

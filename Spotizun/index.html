@@ -26,21 +26,21 @@
             </div>
     
             <div id="nav">
-                <ul class="main">
+                <ul class="main" style="cursor: not-allowed;">
                     <li style="filter:brightness(100%);"><i class="fa-solid fa-house"></i>Trang chủ</li>
                     <li><i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</li>
                     <li><i class="fa-solid fa-compact-disc"></i></i>Thư viện</li>
                 </ul>
         
-                <ul class="like">
+                <ul class="like" style="cursor: not-allowed;">
                     <li>Tạo playlist</li>
                     <li>Bài hát đã thích</li>
                 </ul>
     
                 <ul class="ablum">
-                    <li>AMEE</li>
-                    <li>dreAMEE</li>
-                    <li>3</li>
+                    <a href="amee.html"><li>AMEE</li></a>
+                    <a href="ngot.html"><li>Ngọt</li></a>
+                    <a href="hyper.html"><li>Hyper Potions</li></a>
                 </ul>
             </div>
         </div> 
@@ -63,53 +63,65 @@
                 </div>
             </div>
             <div class="menu">
-                <p style="margin-bottom:20px ;">Chào, Tizun</p>
+                <p style="margin-bottom:20px ;width: 500px;">Chào sếp Tizun</p>
                 <ul>
                     <li>
                         <div class="album-song">
-                            <img src="./assets/image/album/amee/amee.jpg" alt="" class="anh">
-                            <p>AMEE</p>
+                            <div class="inner" onclick="location.href='amee.html';">
+                                <img src="./assets/image/album/amee/amee.jpg" alt="" class="anh">
+                                <p>AMEE</p>
+                            </div>
                             <img src="./assets/image/furniture/green-button.png" alt="" class="nut" id="amee">
                         </div>
                     </li>
 
                     <li>
                         <div class="album-song">
-                            <img src="./assets/image/album/ngọt/ngot.jpg" alt="" class="anh">
-                            <p>Ngọt</p>
+                            <div class="inner" onclick="location.href='ngot.html';">
+                                <img src="./assets/image/album/ngọt/ngot.jpg" alt="" class="anh">
+                                <p>Ngọt</p>
+                            </div>
                             <img src="./assets/image/furniture/green-button.png" alt="" class="nut" id="ngot">
                         </div>
                     </li>
 
                     <li>
                         <div class="album-song">
-                            <img src="./assets/image/album/hyper/hyper.jpg" alt="" class="anh">
-                            <p>Hyper Potions</p>
-                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut">
+                            <div class="inner">
+                                <img src="./assets/image/album/hyper/hyper.jpg" alt="" class="anh">
+                                <p>Hyper Potions</p>
+                            </div>
+                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut" id="hyper">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="album-song" style="cursor: not-allowed;">
+                            <div class="inner" style="cursor: not-allowed;">
+                                <img src="./assets/image/album/ellie/ellie.jpg" alt="" class="anh">
+                                <p style="cursor: not-allowed;">Billie Eilish</p>
+                            </div>
+                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut" style="cursor: not-allowed;">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="album-song" style="cursor: not-allowed;">
+                            <div class="inner" style="cursor: not-allowed;">
+                                <img src="./assets/image/album/a tùng/tùng.jpg" alt="" class="anh">
+                                <p>Sơn Tùng M-TP</p>
+                            </div>
+                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut" style="cursor: not-allowed;">
                         </div>
                     </li>
 
                     <li>
                         <div class="album-song">
-                            <img src="./assets/image/album/ellie/ellie.jpg" alt="" class="anh">
-                            <p>Billie Eilish</p>
-                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="album-song">
-                            <img src="./assets/image/album/a tùng/tùng.jpg" alt="" class="anh">
-                            <p>Sơn Tùng M-TP</p>
-                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="album-song">
-                            <img src="./assets/image/album/ablum/meme song.png" alt="" class="anh">
-                            <p>Đây là meme</p>
-                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut">
+                            <div class="inner" style="cursor: not-allowed;">
+                                <img src="./assets/image/album/ablum/meme song.png" alt="" class="anh">
+                                <p>Game on!</p>
+                            </div>
+                            <img src="./assets/image/furniture/green-button.png" alt="" class="nut" style="cursor: not-allowed;">
                         </div>
                     </li>
 
@@ -122,7 +134,7 @@
                     <div class="song-profile">
                         <img src="./assets/image/album/amee/ddkd.jpg" alt="">
                         <p class="name">dreAMEE</p>
-                        <p class="date">2021 - Album</p>
+                        <p class="date">2021 - Album</p>    
                     </div>
                 </li>
 
@@ -145,7 +157,7 @@
                 <li>
                     <div class="song-profile">
                         <img src="./assets/image/album/other/story.jpg" alt="">
-                        <p class="name">Storíes</p>
+                        <p class="name">Stories</p>
                         <p class="date">2015 - Album</p>
                     </div>
                 </li>
@@ -288,9 +300,9 @@
 
                 <li>
                     <div class="song-profile" id="fav-artist">
-                        <img src="./assets/image/album/amee/ddkd.jpg" alt="">
-                        <p class="name">đen đá không đường</p>
-                        <p class="date">2 THG 3 - 18 PHÚT</p>
+                        <img src="./assets/image/album/hyper/hyper.jpg" alt="">
+                        <p class="name">Hyper Potions</p>
+                        <p class="date">Nghệ sĩ</p>
                     </div>
                 </li>
 
@@ -304,7 +316,7 @@
 
                 <li>
                     <div class="song-profile" id="fav-artist">
-                        <img src="./assets/image/album/amee/ddkd.jpg" alt="">
+                        <img src="./assets/image/album/den vau/denvau.jpg" alt="">
                         <p class="name">đen đá không đường</p>
                         <p class="date">2 THG 3 - 18 PHÚT</p>
                     </div>
@@ -312,7 +324,7 @@
 
                 <li>
                     <div class="song-profile" id="fav-artist">
-                        <img src="./assets/image/album/amee/ddkd.jpg" alt="">
+                        <img src="./assets/image/album/a tùng/tùng.jpg" alt="">
                         <p class="name">đen đá không đường</p>
                         <p class="date">2 THG 3 - 18 PHÚT</p>
                     </div>
@@ -320,7 +332,7 @@
 
                 <li>
                     <div class="song-profile" id="fav-artist">
-                        <img src="./assets/image/album/amee/ddkd.jpg" alt="">
+                        <img src="./assets/image/album/ellie/ellie.jpg" alt="">
                         <p class="name">đen đá không đường</p>
                         <p class="date">2 THG 3 - 18 PHÚT</p>
                     </div>
@@ -331,16 +343,18 @@
 
             <div class="box"></div>
         </div>
+
+        
     </div>
     <!-- ---------------------------------------------------------------------------- -->
     <div id="music">
         <div class="left">
-            <img src="./assets/image/album/amee/dendakhongduong.jpg" alt="" class="songImage">
+            <img src="" alt="" class="songImage" style="opacity: 0;">
             <ul>
-                <li style="font-size: 15px;" class="songName">đen đá không đường</li>
-                <li style="font-size: 10px;margin-top: 5px;color: lightgray;" class="artistName">AMEE</li>
+                <li style="font-size: 15px;" class="songName"></li>
+                <li style="font-size: 10px;margin-top: 5px;color: lightgray;" class="artistName"></li>
             </ul>
-            <img src="./assets/image/furniture/favorite.png" class="heart" alt="">
+            <img src="./assets/image/furniture/favorite.png" class="heart" alt="" style="opacity: 0;">
         </div>
         
         <div class="center">
@@ -381,11 +395,103 @@
         </div>
 
         <audio id="audio" controls>
-            <source src="./assets/music/amee/đen đá không đường.mp3" type="audio/mpeg">
+            <source src="" type="audio/mpeg">
         </audio>
     </div>
 </body>
 <script src="./assets/app.js"></script>
 <script src="./assets/database.js"></script>
 <script src="./assets/design.js"></script>
+<script>
+var profile = document.querySelector("#container .top-bar .profile")
+var detail = document.querySelector("#container .top-bar .profile .sub-nav")
+var move = document.querySelector("#container .top-bar .profile .move")
+
+let flagOpen=1;
+
+profile.addEventListener("click",openClose);
+
+function openClose(){
+    if (flagOpen==1){
+        detail.style.display="unset";
+        flagOpen=0;
+        move.innerHTML = `
+        <i class="fa-solid fa-chevron-up"></i>
+        `
+    }
+    else{
+        detail.style.display="none";
+        flagOpen=1;
+        move.innerHTML = `
+        <i class="fa-solid fa-chevron-down"></i>
+        `
+    }
+}
+
+var amee = document.getElementById("amee");
+amee.addEventListener("click",ameeAlbum);
+
+let flagGreenButton = 0;
+
+function ameeAlbum(){
+    if (isPlaying){
+        playPause();
+        flagGreenButton = 1;
+    }
+    else {
+        flagGreenButton = 0;
+    }
+        
+    tempSong = 0;
+    active();
+    if (flagGreenButton){
+        amee.setAttribute("src","./assets/image/furniture/pause-playlist.PNG");
+    }
+    else {
+        amee.setAttribute("src","./assets/image/furniture/green-button.PNG");
+    }
+}
+
+var ngot = document.getElementById("ngot");
+ngot.addEventListener("click",ngotAlbum);
+
+function ngotAlbum(){
+    if (isPlaying){
+        playPause();
+        flagGreenButton = 1;
+    }
+    else {
+        flagGreenButton = 0;
+    }
+    tempSong = 5;
+    active();
+    if (flagGreenButton){
+        ngot.setAttribute("src","./assets/image/furniture/pause-playlist.PNG");
+    }
+    else {
+        ngot.setAttribute("src","./assets/image/furniture/green-button.PNG");
+    }
+}
+
+var hyper = document.getElementById("hyper");
+hyper.addEventListener("click",hyperAlbum);
+
+function hyperAlbum(){
+    if (isPlaying){
+        playPause();
+        flagGreenButton = 1;
+    }
+    else {
+        flagGreenButton = 0;
+    }
+    tempSong = 10;
+    active();
+    if (flagGreenButton){
+       hyper.setAttribute("src","./assets/image/furniture/pause-playlist.PNG");
+    }
+    else {
+       hyper.setAttribute("src","./assets/image/furniture/green-button.PNG");
+    }
+}
+</script>
 </html>

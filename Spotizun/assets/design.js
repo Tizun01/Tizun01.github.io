@@ -24,31 +24,6 @@ function changeHeartColor(){
     }
 }
 
-var profile = document.querySelector("#container .top-bar .profile")
-var detail = document.querySelector("#container .top-bar .profile .sub-nav")
-var move = document.querySelector("#container .top-bar .profile .move")
-
-let flagOpen=1;
-
-profile.addEventListener("click",openClose);
-
-function openClose(){
-    if (flagOpen==1){
-        detail.style.opacity="1";
-        flagOpen=0;
-        move.innerHTML = `
-        <i class="fa-solid fa-chevron-up"></i>
-        `
-    }
-    else{
-        detail.style.opacity="0";
-        flagOpen=1;
-        move.innerHTML = `
-        <i class="fa-solid fa-chevron-down"></i>
-        `
-    }
-}
-
 var volume = document.querySelector(".volume");
 var volumeBar = document.getElementById("volumeBar");
 
@@ -70,3 +45,30 @@ function changeVolume(){
         song.muted = true;
     }
 }
+
+var followButton = document.getElementById("followOtp")
+
+followButton.addEventListener("click",changefollowButtonColor);
+
+let flagfollowButton = 1;
+
+function followButtonActive(){
+    followButton.textContent = "Đang theo dõi";
+    followButton.style.filter = "brightness(100%)";
+    flagfollowButton=0;
+}
+
+function followButtonDisable(){
+    followButton.textContent = "Theo dõi";
+    followButton.style.filter = "brightness(50%)";
+    flagfollowButton=1;
+}
+
+function changefollowButtonColor(){
+    if (flagfollowButton)
+        followButtonActive();
+    else
+        followButtonDisable();
+    
+}
+

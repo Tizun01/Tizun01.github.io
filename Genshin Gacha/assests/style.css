@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: url(./image/background.png);
+}
+
+.container{
+    display: block;
+    transition: 1s;
+}
+
+#top{
+    width: 100%;
+    height: 100px;
+}
+
+#top .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top .content .banner-nav{
+    width: 130px;
+    height: 60px;
+    margin: 0 10px;
+    position: relative;
+}
+
+#top .content .banner-nav .background-nav{
+    width: 100%;
+    height: 40px;
+    background: url(./image/char-background.png);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+#top .content .banner-nav .background-nav img{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top:    -20px;
+    object-fit: cover;
+    object-position: 0 -30px; 
+}
+
+#middle{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle .banner{
+    width: 900px;
+    height: 450px;
+    background: url(./image/yelan-banner.jpg);
+    background-size: cover;
+    background-position: 0 -5px;
+}
+
+#bottom{
+    width: 100%;
+    height: 100px;
+}
+
+#bottom .roll{
+    width: 40%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom .roll .one-roll{
+    width: 250px;
+    height: 60px;
+    background: url(./image/roll.png);
+    margin: 0 10px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom .roll .ten-roll{
+    width: 250px;
+    height: 60px;
+    background: url(./image/roll.png);
+    margin: 0 10px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom .roll p{
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    color: goldenrod;
+}
+
+#bottom .roll img{
+    top: 28px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    object-fit: cover;
+}
+
+#roll-screen-1roll{
+    display: none;
+    position: fixed;
+    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#roll-screen-10roll{
+    display: none;
+    position: fixed;
+    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#roll-item{
+    display: none;
+    position: fixed;
+    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 0 -50px;
+}
